@@ -7,8 +7,9 @@ public class PlayMovieScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		movie = ((MovieTexture)GetComponent<Renderer>().material.mainTexture);
-		movie.Play();
 		movie.loop = true;
+		movie.Play();
+		
 		source = ((AudioSource)GetComponent<AudioSource>());
 		source.Play();
 		source.loop = true;
